@@ -6,7 +6,7 @@ from django.views.generic import (
     DetailView,
     CreateView,
     UpdateView,
-    Deleteview,
+    DeleteView,
 )
 
 from .models import Post
@@ -36,7 +36,7 @@ class BlogUpdateView(UpdateView):
     fields = ['title', 'body']
 
 
-class BlogDeleteView(Deleteview):
+class BlogDeleteView(DeleteView):
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('home')
