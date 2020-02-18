@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.views.generic import (
     ListView,
     DetailView,
-
+    CreateView
 )
 
 from .models import Post
@@ -19,3 +19,9 @@ class HomePageView(ListView):
 class BlogDetailView(DetailView):
     model = Post
     template_name = 'post_detail.html'
+
+
+class BlogCreateView(CreateView):
+    model = Post
+    template_name = 'post_new.html'
+    fields = '__all__'

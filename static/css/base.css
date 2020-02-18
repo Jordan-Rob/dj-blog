@@ -7,6 +7,7 @@ header {
   border-bottom: 1px solid #999;
   margin-bottom: 2rem;
   display: flex;
+  space-between: ;
 }
 
 header h1 a {
@@ -18,10 +19,15 @@ h3 a {
   text-decoration: none;
 }
 
+.nav-left {
+  margin-right: auto;
+}
+
 .nav-right {
   display: flex;
   padding-top: 2rem;
 }
+
 .post-entry {
   margin-bottom: 2rem;
 }
